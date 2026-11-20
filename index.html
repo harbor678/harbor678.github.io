@@ -1,0 +1,1700 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美女写真家 - 原创影像品牌 | 深耕人像摄影视频社区</title>
+<meta name="description" content="美女写真家官方网站，专注人像写真影像内容的原创视频品牌，汇聚专业摄影师与创作者，打造高品质写真拍摄教程、幕后故事与作品社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f3a6c0'/%3E%3Ccircle cx='32' cy='26' r='11' fill='%23fff5f8'/%3E%3Cpath d='M18 52c0-9 6-15 14-15s14 6 14 15z' fill='%23fff5f8'/%3E%3Ccircle cx='46' cy='16' r='5' fill='%237a3b52'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mw-bg:#fbf6f4;
+  --mw-pink:#f3a6c0;
+  --mw-pink-deep:#d96f95;
+  --mw-plum:#7a3b52;
+  --mw-plum-soft:#a56a80;
+  --mw-ink:#33222a;
+  --mw-grey:#8c7a81;
+  --mw-card:#ffffff;
+  --mw-line:#ecdcd9;
+  --mw-lilac:#cdbfe6;
+  --mw-cream:#fdeee7;
+  --mw-radius:18px;
+  --mw-shadow:0 10px 30px rgba(122,59,82,.08);
+  --mw-headh:126px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--mw-headh) + 12px)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--mw-bg);
+  color:var(--mw-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.mw-wrap{width:min(1180px,92%);margin:0 auto}
+
+/* ============ sticky header ============ */
+.mw-stick{position:sticky;top:0;z-index:90}
+
+.mw-notice{
+  background:linear-gradient(90deg,var(--mw-plum),var(--mw-pink-deep) 55%,var(--mw-pink));
+  color:#fff;font-size:13.5px;
+}
+.mw-notice-inner{display:flex;align-items:center;gap:12px;padding:9px 0;overflow:hidden}
+.mw-notice-tag{
+  flex:none;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.45);
+  padding:1px 9px;border-radius:20px;font-size:12px;letter-spacing:.08em;
+}
+.mw-notice-track{display:flex;gap:44px;white-space:nowrap;animation:mwMarquee 26s linear infinite}
+.mw-notice-track span{opacity:.95}
+.mw-notice-track b{color:#ffe6ef;font-weight:600}
+@keyframes mwMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.mw-header{background:rgba(251,246,244,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--mw-line)}
+.mw-header-inner{display:flex;align-items:center;gap:26px;padding:14px 0}
+.mw-logo{display:flex;align-items:center;gap:10px;flex:none}
+.mw-logo-mark{
+  width:44px;height:44px;border-radius:14px;flex:none;
+  background:radial-gradient(circle at 32% 26%,#fff0f5,transparent 58%),linear-gradient(140deg,var(--mw-pink),var(--mw-plum));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:19px;letter-spacing:-.02em;
+  box-shadow:0 6px 16px rgba(217,111,149,.35);
+}
+.mw-logo-text strong{display:block;font-size:18px;letter-spacing:.02em}
+.mw-logo-text small{display:block;font-size:11px;color:var(--mw-grey);letter-spacing:.22em}
+.mw-nav{display:flex;gap:4px;margin-left:6px;flex-wrap:wrap}
+.mw-nav a{
+  padding:8px 13px;border-radius:10px;font-size:14.5px;color:var(--mw-plum-soft);
+  transition:background .22s,color .22s;
+}
+.mw-nav a:hover,.mw-nav a.is-active{background:#fff;color:var(--mw-plum);box-shadow:var(--mw-shadow)}
+.mw-head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.mw-search{position:relative;display:flex;align-items:center}
+.mw-search input{
+  width:230px;padding:9px 38px 9px 14px;border-radius:12px;font-size:14px;
+  border:1px solid var(--mw-line);background:#fff;color:var(--mw-ink);outline:none;
+  transition:border-color .2s,box-shadow .2s,width .25s;
+}
+.mw-search input:focus{border-color:var(--mw-pink);box-shadow:0 0 0 3px rgba(243,166,192,.25);width:270px}
+.mw-search button{
+  position:absolute;right:6px;width:28px;height:28px;border-radius:8px;
+  background:var(--mw-cream);display:grid;place-items:center;color:var(--mw-plum);font-size:14px;
+}
+.mw-search-hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border-radius:12px;
+  border:1px solid var(--mw-line);box-shadow:0 16px 36px rgba(122,59,82,.14);
+  padding:8px;font-size:13.5px;display:none;z-index:60;
+}
+.mw-search-hint.is-open{display:block}
+.mw-search-hint p{padding:6px 10px;border-radius:8px;color:var(--mw-grey);font-size:12.5px}
+.mw-search-hint button{width:100%;text-align:left;padding:7px 10px;border-radius:8px;font-size:13.5px;color:var(--mw-ink)}
+.mw-search-hint button:hover{background:var(--mw-cream)}
+.mw-search-hint .mw-hint-empty{color:var(--mw-pink-deep);font-size:13px;padding:8px 10px}
+.mw-btn{
+  display:inline-flex;align-items:center;gap:7px;padding:10px 20px;border-radius:12px;
+  font-size:14px;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s;
+}
+.mw-btn:hover{transform:translateY(-2px)}
+.mw-btn-primary{background:linear-gradient(120deg,var(--mw-pink-deep),var(--mw-pink));color:#fff;box-shadow:0 8px 20px rgba(217,111,149,.32)}
+.mw-btn-ghost{background:#fff;color:var(--mw-plum);border:1px solid var(--mw-line)}
+.mw-btn-dark{background:var(--mw-plum);color:#fff}
+.mw-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--mw-line);background:#fff;font-size:18px;color:var(--mw-plum)}
+.mw-mobile-panel{display:none;border-top:1px solid var(--mw-line);background:#fff;padding:12px 0 18px}
+.mw-mobile-panel.is-open{display:block}
+.mw-mobile-panel nav{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mw-mobile-panel nav a{padding:11px 14px;border-radius:10px;background:var(--mw-cream);font-size:14.5px;color:var(--mw-plum)}
+
+/* ============ hero ============ */
+.mw-hero{padding:58px 0 44px;position:relative;overflow:hidden}
+.mw-hero::before{
+  content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(205,191,230,.45),transparent 68%);
+  top:-190px;right:-120px;z-index:0;
+}
+.mw-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.mw-badge{
+  display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:30px;
+  background:#fff;border:1px solid var(--mw-line);font-size:12.5px;color:var(--mw-plum-soft);letter-spacing:.06em;
+}
+.mw-badge i{width:7px;height:7px;border-radius:50%;background:var(--mw-pink-deep);display:inline-block}
+.mw-hero h1{
+  font-size:clamp(38px,5.4vw,62px);line-height:1.1;letter-spacing:-.01em;margin:20px 0 8px;
+  background:linear-gradient(120deg,var(--mw-plum) 10%,var(--mw-pink-deep) 70%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.mw-hero-sub{font-size:17px;color:var(--mw-plum-soft);font-weight:600;letter-spacing:.04em;margin-bottom:18px}
+.mw-hero-desc{font-size:15px;color:#5b4650;max-width:520px}
+.mw-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 30px}
+.mw-hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:520px}
+.mw-stat{background:#fff;border-radius:14px;padding:14px 16px;border:1px solid var(--mw-line)}
+.mw-stat strong{display:block;font-size:24px;color:var(--mw-plum);letter-spacing:-.02em}
+.mw-stat span{font-size:12.5px;color:var(--mw-grey);letter-spacing:.05em}
+
+.mw-hero-visual{position:relative}
+.mw-hero-card{
+  border-radius:26px;overflow:hidden;box-shadow:0 26px 60px rgba(122,59,82,.2);position:relative;
+  background:#2a1a21;
+}
+.mw-hero-card img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.mw-hero-card figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:26px 22px 20px;color:#fff;
+  background:linear-gradient(transparent,rgba(42,16,26,.82));
+  font-size:14px;
+}
+.mw-hero-card figcaption b{display:block;font-size:17px;margin-bottom:4px}
+.mw-hero-card figcaption small{opacity:.8;font-size:12.5px}
+.mw-hero-float{
+  position:absolute;right:-14px;bottom:34px;background:#fff;border-radius:16px;padding:14px 18px;
+  box-shadow:0 18px 40px rgba(122,59,82,.18);font-size:13px;color:var(--mw-plum-soft);
+  display:flex;align-items:center;gap:10px;border:1px solid var(--mw-line);
+}
+.mw-hero-float b{color:var(--mw-plum);font-size:15px}
+.mw-hero-float .mw-live{width:9px;height:9px;border-radius:50%;background:#5ec8a0;box-shadow:0 0 0 4px rgba(94,200,160,.2)}
+
+/* ============ section generic ============ */
+.mw-section{padding:64px 0}
+.mw-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:32px;flex-wrap:wrap}
+.mw-kicker{font-size:12.5px;letter-spacing:.24em;color:var(--mw-pink-deep);font-weight:700;text-transform:uppercase}
+.mw-section-head h2{font-size:clamp(24px,3vw,32px);color:var(--mw-plum);letter-spacing:-.01em;margin-top:6px}
+.mw-section-head p{font-size:14px;color:var(--mw-grey);max-width:520px;margin-top:8px}
+.mw-altbg{background:linear-gradient(180deg,#fff,var(--mw-cream))}
+
+/* ============ intro / 关键解析 ============ */
+.mw-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.mw-prose{font-size:15px;color:#4e3b44}
+.mw-prose p{margin-bottom:16px}
+.mw-prose h3{font-size:19px;color:var(--mw-plum);margin:24px 0 10px}
+.mw-prose strong{color:var(--mw-pink-deep)}
+.mw-intro-side{display:flex;flex-direction:column;gap:16px}
+.mw-mini{
+  background:#fff;border:1px solid var(--mw-line);border-radius:16px;padding:18px 20px;
+  display:flex;gap:14px;align-items:flex-start;
+}
+.mw-mini-icon{
+  width:42px;height:42px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:var(--mw-cream);color:var(--mw-pink-deep);font-size:19px;
+}
+.mw-mini h4{font-size:15px;color:var(--mw-plum);margin-bottom:4px}
+.mw-mini p{font-size:13.5px;color:var(--mw-grey);line-height:1.65}
+
+/* ============ 焦点视频 ============ */
+.mw-focus-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:22px}
+.mw-vcard{
+  background:var(--mw-card);border-radius:var(--mw-radius);overflow:hidden;border:1px solid var(--mw-line);
+  transition:transform .28s,box-shadow .28s;display:flex;flex-direction:column;
+}
+.mw-vcard:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(122,59,82,.14)}
+.mw-cover{position:relative;overflow:hidden;background:#2a1a21}
+.mw-cover img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/9;transition:transform .5s}
+.mw-vcard:hover .mw-cover img{transform:scale(1.05)}
+.mw-cover-tag{
+  position:absolute;left:12px;top:12px;background:rgba(255,255,255,.92);color:var(--mw-plum);
+  font-size:11.5px;padding:3px 10px;border-radius:20px;letter-spacing:.06em;
+}
+.mw-play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.mw-play i{
+  width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.9);
+  display:grid;place-items:center;color:var(--mw-pink-deep);font-style:normal;font-size:18px;
+  box-shadow:0 8px 22px rgba(0,0,0,.22);
+}
+.mw-vbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.mw-vbody h3{font-size:16px;color:var(--mw-ink);line-height:1.5}
+.mw-vbody p{font-size:13.5px;color:var(--mw-grey);line-height:1.65}
+.mw-vmeta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--mw-grey);flex-wrap:wrap}
+.mw-vmeta b{color:var(--mw-plum-soft);font-weight:600}
+.mw-vtags{display:flex;gap:6px;flex-wrap:wrap}
+.mw-tag{background:var(--mw-cream);color:var(--mw-pink-deep);font-size:11.5px;padding:2px 9px;border-radius:20px}
+.mw-vactions{display:flex;gap:8px;margin-top:auto;padding-top:8px}
+.mw-ico{
+  display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--mw-plum-soft);
+  padding:5px 10px;border-radius:9px;border:1px solid var(--mw-line);background:#fff;transition:all .2s;
+}
+.mw-ico:hover{border-color:var(--mw-pink);color:var(--mw-pink-deep)}
+.mw-ico.is-on{background:#ffe8f0;border-color:var(--mw-pink);color:var(--mw-pink-deep)}
+.mw-side-list{display:flex;flex-direction:column;gap:16px}
+.mw-side-list .mw-vcard{flex-direction:row;align-items:stretch}
+.mw-side-list .mw-cover{width:168px;flex:none}
+.mw-side-list .mw-cover img{aspect-ratio:auto;height:100%;min-height:112px}
+.mw-side-list .mw-vbody{padding:12px 14px}
+.mw-side-list .mw-vbody h3{font-size:14.5px}
+.mw-side-list .mw-vbody p{display:none}
+.mw-side-list .mw-cover-tag{font-size:11px;padding:2px 8px}
+.mw-side-list .mw-play i{width:38px;height:38px;font-size:14px}
+
+/* ============ 更多视频流 ============ */
+.mw-stream{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.mw-filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.mw-chip{
+  padding:7px 16px;border-radius:20px;font-size:13.5px;background:#fff;border:1px solid var(--mw-line);
+  color:var(--mw-plum-soft);transition:all .2s;
+}
+.mw-chip.is-on,.mw-chip:hover{background:var(--mw-plum);color:#fff;border-color:var(--mw-plum)}
+
+/* ============ 专题 ============ */
+.mw-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mw-topic{
+  border-radius:var(--mw-radius);padding:22px;background:#fff;border:1px solid var(--mw-line);
+  display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden;
+}
+.mw-topic::after{
+  content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;
+  background:var(--mw-cream);
+}
+.mw-topic .mw-tno{font-size:12px;letter-spacing:.18em;color:var(--mw-pink-deep);font-weight:700;position:relative;z-index:1}
+.mw-topic h3{font-size:17px;color:var(--mw-plum);position:relative;z-index:1}
+.mw-topic p{font-size:13.5px;color:var(--mw-grey);position:relative;z-index:1}
+.mw-topic-state{font-size:12px;color:var(--mw-plum-soft);background:var(--mw-cream);padding:3px 10px;border-radius:20px;align-self:flex-start;position:relative;z-index:1}
+
+/* ============ 创作者 ============ */
+.mw-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.mw-creator{
+  background:#fff;border-radius:var(--mw-radius);border:1px solid var(--mw-line);padding:20px;text-align:center;
+  transition:transform .25s,box-shadow .25s;
+}
+.mw-creator:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(122,59,82,.13)}
+.mw-avatar{
+  width:66px;height:66px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;
+  font-size:22px;font-weight:700;color:#fff;letter-spacing:0;
+}
+.mw-creator h3{font-size:15.5px;color:var(--mw-ink)}
+.mw-creator .mw-crole{font-size:12.5px;color:var(--mw-pink-deep);margin:2px 0 8px}
+.mw-creator p{font-size:13px;color:var(--mw-grey);line-height:1.6;min-height:58px}
+.mw-cnums{display:flex;justify-content:center;gap:16px;font-size:12.5px;color:var(--mw-grey);margin:10px 0 12px}
+.mw-cnums b{display:block;color:var(--mw-plum);font-size:14px}
+.mw-creator .mw-ico{width:100%;justify-content:center}
+
+/* ============ 作品墙 ============ */
+.mw-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.mw-wall figure{
+  position:relative;border-radius:14px;overflow:hidden;background:#2a1a21;
+  transition:transform .3s;
+}
+.mw-wall figure:hover{transform:scale(1.02)}
+.mw-wall figure img{width:100%;height:100%;object-fit:cover}
+.mw-wall figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:18px 12px 10px;color:#fff;font-size:12px;
+  background:linear-gradient(transparent,rgba(42,16,26,.8));
+}
+.mw-wall .mw-w-lg{grid-column:span 3;grid-row:span 2}
+.mw-wall .mw-w-md{grid-column:span 2}
+.mw-wall .mw-w-sm{grid-column:span 1}
+.mw-wall .mw-w-lg img{aspect-ratio:3/2}
+.mw-wall .mw-w-md img{aspect-ratio:16/10}
+.mw-wall .mw-w-sm img{aspect-ratio:1/1}
+
+/* ============ 评论 ============ */
+.mw-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mw-review{
+  background:#fff;border:1px solid var(--mw-line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;
+}
+.mw-review-head{display:flex;align-items:center;gap:10px}
+.mw-r-avatar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:14px;font-weight:700;flex:none}
+.mw-review-head b{font-size:14px;display:block;color:var(--mw-ink)}
+.mw-review-head small{font-size:11.5px;color:var(--mw-grey)}
+.mw-review p{font-size:13.5px;color:#5b4650;line-height:1.7}
+.mw-stars{color:#e5a03c;font-size:12.5px;letter-spacing:2px}
+
+/* ============ 品牌故事 ============ */
+.mw-story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.mw-story-media{border-radius:22px;overflow:hidden;box-shadow:0 24px 54px rgba(122,59,82,.18)}
+.mw-story-media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.mw-story-list{display:flex;flex-direction:column;gap:18px;margin-top:22px}
+.mw-story-item{display:flex;gap:14px}
+.mw-story-item .mw-sn{
+  flex:none;width:34px;height:34px;border-radius:10px;background:var(--mw-cream);color:var(--mw-pink-deep);
+  display:grid;place-items:center;font-weight:700;font-size:14px;
+}
+.mw-story-item h4{font-size:15.5px;color:var(--mw-plum);margin-bottom:3px}
+.mw-story-item p{font-size:13.5px;color:var(--mw-grey)}
+
+/* ============ 动态 ============ */
+.mw-news{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mw-news-card{
+  background:#fff;border:1px solid var(--mw-line);border-radius:16px;padding:20px;
+  display:flex;flex-direction:column;gap:8px;
+}
+.mw-news-card time{font-size:12px;color:var(--mw-pink-deep);letter-spacing:.06em}
+.mw-news-card h3{font-size:15px;color:var(--mw-plum);line-height:1.5}
+.mw-news-card p{font-size:13px;color:var(--mw-grey)}
+
+/* ============ partners ============ */
+.mw-partners{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.mw-partner{
+  padding:14px 26px;border-radius:12px;background:#fff;border:1px dashed var(--mw-line);
+  font-size:14px;color:var(--mw-plum-soft);letter-spacing:.04em;
+}
+
+/* ============ FAQ ============ */
+.mw-faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mw-faq details{
+  background:#fff;border:1px solid var(--mw-line);border-radius:14px;padding:4px 18px;
+  transition:border-color .2s;
+}
+.mw-faq details[open]{border-color:var(--mw-pink)}
+.mw-faq summary{
+  cursor:pointer;list-style:none;padding:14px 0;font-size:14.5px;color:var(--mw-plum);font-weight:600;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.mw-faq summary::-webkit-details-marker{display:none}
+.mw-faq summary::after{content:"+";font-size:18px;color:var(--mw-pink-deep);transition:transform .2s}
+.mw-faq details[open] summary::after{transform:rotate(45deg)}
+.mw-faq details p{font-size:13.5px;color:var(--mw-grey);padding-bottom:14px;line-height:1.7}
+
+/* ============ contact ============ */
+.mw-contact{
+  background:linear-gradient(125deg,var(--mw-plum),#a4516f 60%,var(--mw-pink-deep));
+  border-radius:26px;padding:44px;color:#fff;display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center;
+}
+.mw-contact h2{font-size:28px;margin-bottom:10px;letter-spacing:-.01em}
+.mw-contact p{font-size:14.5px;opacity:.88;max-width:480px}
+.mw-contact-info{display:flex;flex-direction:column;gap:10px;font-size:14px;opacity:.92}
+.mw-contact-info div{display:flex;gap:9px;align-items:center}
+.mw-contact-actions{display:flex;flex-direction:column;gap:12px}
+.mw-contact .mw-btn-ghost{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.4)}
+.mw-contact .mw-btn-ghost:hover{background:rgba(255,255,255,.24)}
+
+/* ============ footer ============ */
+.mw-footer{background:#2b1b23;color:#cbb8c0;padding:52px 0 0;margin-top:20px}
+.mw-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;padding-bottom:36px}
+.mw-footer h4{font-size:14px;color:#fff;margin-bottom:14px;letter-spacing:.06em}
+.mw-footer p{font-size:13px;line-height:1.8;color:#b7a3ac}
+.mw-footer li{font-size:13px;margin-bottom:8px;color:#b7a3ac}
+.mw-footer li a:hover{color:var(--mw-pink)}
+.mw-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.mw-footer-brand .mw-logo-mark{width:38px;height:38px;border-radius:12px;font-size:16px}
+.mw-footer-brand b{color:#fff;font-size:16px}
+.mw-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding:18px 0;font-size:12.5px;color:#977f8a;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* ============ modal/toast/top ============ */
+.mw-modal{
+  position:fixed;inset:0;background:rgba(43,27,35,.55);backdrop-filter:blur(3px);
+  display:none;place-items:center;z-index:200;padding:20px;
+}
+.mw-modal.is-open{display:grid}
+.mw-modal-box{
+  background:#fff;border-radius:20px;padding:28px;width:min(460px,100%);
+  box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative;animation:mwPop .25s ease;
+}
+@keyframes mwPop{from{transform:translateY(14px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.mw-modal-box h3{font-size:19px;color:var(--mw-plum);margin-bottom:8px}
+.mw-modal-box p{font-size:14px;color:var(--mw-grey);line-height:1.7;margin-bottom:16px}
+.mw-modal-close{position:absolute;right:14px;top:12px;font-size:20px;color:var(--mw-grey)}
+.mw-modal-box label{display:block;font-size:13px;color:var(--mw-plum-soft);margin-bottom:6px}
+.mw-modal-box input,.mw-modal-box textarea{
+  width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--mw-line);
+  font-size:14px;font-family:inherit;margin-bottom:12px;outline:none;resize:vertical;
+}
+.mw-modal-box input:focus,.mw-modal-box textarea:focus{border-color:var(--mw-pink)}
+.mw-share-row{display:flex;gap:10px;flex-wrap:wrap}
+.mw-share-row button{
+  flex:1;min-width:90px;padding:10px;border-radius:10px;background:var(--mw-cream);
+  font-size:13.5px;color:var(--mw-plum);
+}
+.mw-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);opacity:0;pointer-events:none;
+  background:var(--mw-plum);color:#fff;padding:11px 22px;border-radius:30px;font-size:14px;
+  z-index:300;transition:all .3s;box-shadow:0 14px 34px rgba(122,59,82,.35);
+}
+.mw-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.mw-top{
+  position:fixed;right:26px;bottom:26px;width:46px;height:46px;border-radius:14px;
+  background:#fff;border:1px solid var(--mw-line);color:var(--mw-plum);font-size:18px;
+  box-shadow:0 12px 30px rgba(122,59,82,.18);z-index:120;display:none;
+}
+.mw-top.is-show{display:block}
+.mw-top:hover{background:var(--mw-cream)}
+
+/* ============ responsive ============ */
+@media (max-width:1080px){
+  .mw-focus-grid{grid-template-columns:1fr}
+  .mw-stream{grid-template-columns:repeat(2,1fr)}
+  .mw-creators{grid-template-columns:repeat(2,1fr)}
+  .mw-reviews{grid-template-columns:repeat(2,1fr)}
+  .mw-news{grid-template-columns:repeat(2,1fr)}
+  .mw-footer-grid{grid-template-columns:1fr 1fr}
+  .mw-intro-grid,.mw-story-grid,.mw-contact{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  :root{--mw-headh:112px}
+  .mw-nav{display:none}
+  .mw-burger{display:grid;place-items:center}
+  .mw-head-tools .mw-search{display:none}
+  .mw-hero-grid{grid-template-columns:1fr;gap:34px}
+  .mw-hero-float{right:10px;bottom:14px}
+  .mw-topic-grid{grid-template-columns:1fr}
+  .mw-wall{grid-template-columns:repeat(4,1fr)}
+  .mw-wall .mw-w-lg{grid-column:span 4;grid-row:span 1}
+  .mw-wall .mw-w-md{grid-column:span 2}
+  .mw-wall .mw-w-sm{grid-column:span 1}
+  .mw-faq{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .mw-section{padding:46px 0}
+  .mw-stream,.mw-creators,.mw-reviews,.mw-news{grid-template-columns:1fr}
+  .mw-footer-grid{grid-template-columns:1fr}
+  .mw-hero-stats{grid-template-columns:1fr}
+  .mw-side-list .mw-vcard{flex-direction:column}
+  .mw-side-list .mw-cover{width:100%}
+  .mw-side-list .mw-cover img{aspect-ratio:16/9;min-height:0}
+  .mw-contact{padding:28px}
+  .mw-notice-track{animation:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="mw-stick">
+  <div class="mw-notice">
+    <div class="mw-wrap mw-notice-inner">
+      <span class="mw-notice-tag">官方发布</span>
+      <div class="mw-notice-track" id="mwNoticeTrack">
+        <span><b>11-18</b> 冬季人像专题《柔光之下》上线，共收录 8 位创作者作品</span>
+        <span><b>11-16</b> 第十二期写真创作挑战赛开放报名，主题「窗边的自然光」</span>
+        <span><b>11-14</b> 官方发布 4K 高清调色预设合辑，品牌会员可下载</span>
+        <span><b>11-12</b> 摄影师访谈《光线的语法》第二季更新第 3 集</span>
+        <span><b>11-18</b> 冬季人像专题《柔光之下》上线，共收录 8 位创作者作品</span>
+        <span><b>11-16</b> 第十二期写真创作挑战赛开放报名，主题「窗边的自然光」</span>
+        <span><b>11-14</b> 官方发布 4K 高清调色预设合辑，品牌会员可下载</span>
+        <span><b>11-12</b> 摄影师访谈《光线的语法》第二季更新第 3 集</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="mw-header">
+    <div class="mw-wrap mw-header-inner">
+      <a class="mw-logo" href="#mwHome" aria-label="美女写真家首页">
+        <span class="mw-logo-mark">写</span>
+        <span class="mw-logo-text">
+          <strong>美女写真家</strong>
+          <small>PORTRAIT STUDIO</small>
+        </span>
+      </a>
+      <nav class="mw-nav" aria-label="主导航">
+        <a href="#mwHome" class="is-active">首页</a>
+        <a href="#mwFocus">焦点影像</a>
+        <a href="#mwTopics">专题企划</a>
+        <a href="#mwCreators">创作者</a>
+        <a href="#mwStory">品牌故事</a>
+        <a href="#mwNews">企业动态</a>
+        <a href="#mwFaq">帮助中心</a>
+        <a href="#mwContact">联系我们</a>
+      </nav>
+      <div class="mw-head-tools">
+        <div class="mw-search">
+          <input type="text" id="mwSearchInput" placeholder="搜索写真教程、创作者、专题" aria-label="站内搜索">
+          <button type="button" id="mwSearchBtn" aria-label="搜索">⌕</button>
+          <div class="mw-search-hint" id="mwSearchHint"></div>
+        </div>
+        <button class="mw-btn mw-btn-primary" type="button" data-mw-open="submit">我要投稿</button>
+        <button class="mw-burger" type="button" id="mwBurger" aria-label="展开菜单" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="mw-mobile-panel" id="mwMobilePanel">
+      <div class="mw-wrap">
+        <nav aria-label="移动端导航">
+          <a href="#mwHome">首页</a>
+          <a href="#mwFocus">焦点影像</a>
+          <a href="#mwTopics">专题企划</a>
+          <a href="#mwCreators">创作者</a>
+          <a href="#mwStory">品牌故事</a>
+          <a href="#mwNews">企业动态</a>
+          <a href="#mwFaq">帮助中心</a>
+          <a href="#mwContact">联系我们</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="mw-hero" id="mwHome">
+  <div class="mw-wrap mw-hero-grid">
+    <div>
+      <span class="mw-badge"><i></i>美女写真家 官方网站 · 品牌影像社区</span>
+      <h1>美女写真家</h1>
+      <p class="mw-hero-sub">把人像写真做成值得反复观看的影像作品</p>
+      <p class="mw-hero-desc">
+        作为深耕人像写真垂直领域的原创视频品牌，美女写真家官方网站持续运营一支由摄影师、造型师、导演与后期创作者组成的专业团队，用真实的光线、真实的情绪、真实的故事，为每一位关注人像美学的人提供高品质的精品内容与创作经验。
+      </p>
+      <div class="mw-hero-actions">
+        <a class="mw-btn mw-btn-primary" href="#mwFocus">进入焦点影像 →</a>
+        <a class="mw-btn mw-btn-ghost" href="#mwCreators">认识创作者</a>
+        <button class="mw-btn mw-btn-ghost" type="button" data-mw-open="submit">投稿报名</button>
+      </div>
+      <div class="mw-hero-stats">
+        <div class="mw-stat"><strong data-mw-count="1860">0</strong><span>原创影像作品</span></div>
+        <div class="mw-stat"><strong data-mw-count="248">0</strong><span>认证创作者</span></div>
+        <div class="mw-stat"><strong data-mw-count="96">0</strong><span>专题企划期数</span></div>
+      </div>
+    </div>
+    <div class="mw-hero-visual">
+      <figure class="mw-hero-card">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 1000'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f7d7e2'/%3E%3Cstop offset='1' stop-color='%237a3b52'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23fdeee7'/%3E%3Cstop offset='1' stop-color='%23f3a6c0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='1000' fill='url(%23a)'/%3E%3Ccircle cx='560' cy='250' r='170' fill='url(%23b)' opacity='.55'/%3E%3Ccircle cx='230' cy='640' r='210' fill='%23fff5f8' opacity='.2'/%3E%3Cpath d='M0 780 Q200 640 400 760 T800 720 V1000 H0Z' fill='%232a1a21' opacity='.55'/%3E%3Cg fill='none' stroke='%23fff5f8' stroke-width='2' opacity='.65'%3E%3Ccircle cx='410' cy='430' r='118'/%3E%3Ccircle cx='410' cy='430' r='150' stroke-dasharray='6 12'/%3E%3C/g%3E%3Cpath d='M410 312 a118 118 0 0 1 0 236 a118 118 0 0 1 0 -236' fill='%23fff5f8' opacity='.22'/%3E%3Cg fill='%23fff5f8' opacity='.9'%3E%3Crect x='60' y='60' width='120' height='3'/%3E%3Crect x='60' y='76' width='76' height='3'/%3E%3C/g%3E%3Cg fill='%23ffe6ef' opacity='.85'%3E%3Ctext x='60' y='930' font-size='26' font-family='sans-serif' letter-spacing='6'%3ESTUDIO 04 / WINTER%3C/text%3E%3C/g%3E%3C/svg%3E" alt="美女写真家冬季人像主视觉：暖粉与深梅色交织的柔光人像构图">
+        <figcaption>
+          <b>《柔光之下》冬季人像专题</b>
+          <small>8 位创作者 · 12 支幕后影像 · 官方出品</small>
+        </figcaption>
+      </figure>
+      <div class="mw-hero-float">
+        <span class="mw-live"></span>
+        <div>本期更新 <b>5</b> 支作品<br><small>11 月 18 日 20:00 上线</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 品牌解析 ================= -->
+<section class="mw-section mw-altbg" id="mwAbout">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">品牌解析</span>
+        <h2>关于美女写真家：一个认真对待人像的影像品牌</h2>
+        <p>从一支镜头、一束自然光开始，我们把写真拍摄拆解成可学习、可讨论、可参与的完整内容生态。</p>
+      </div>
+    </div>
+    <div class="mw-intro-grid">
+      <div class="mw-prose">
+        <p><strong>美女写真家</strong>是一个以人像写真为核心内容的视频品牌与创作者社区。我们相信，一张好的人像作品从来不是偶然：它来自对光线的理解、对被摄者情绪的尊重、对构图与色彩的长期训练，也来自拍摄现场那些没有被剪掉的真实瞬间。因此，美女写真家官方网站选择用视频记录这些过程，把拍摄前的构思、现场的调整、后期的取舍完整地呈现给观众。</p>
+        <p>在内容方向上，我们把「人像写真」这一垂直领域拆解为几条清晰的线索：其一是<strong>光线与场景</strong>，包括自然光、窗光、逆光、室内补光的实战演示；其二是<strong>造型与情绪</strong>，讨论服装、妆容、姿态如何共同塑造画面气质；其三是<strong>镜头语言</strong>，从焦段选择到景别节奏，帮助创作者建立自己的视觉语汇；其四是<strong>后期与输出</strong>，覆盖调色思路、皮肤质感处理与作品呈现方式。四条线索交叉组合，构成了平台上持续更新的精品内容矩阵。</p>
+        <h3>为什么选择视频这种表达方式</h3>
+        <p>静态图片能给出结果，视频却能给出路径。对刚入门的摄影爱好者来说，一张漂亮的写真往往只留下「好看」的印象，而一支完整的拍摄记录可以让他们看到摄影师如何与模特沟通、如何在光线变化时快速调整、如何在一百多张废片中找到真正成立的那一张。作为一家持续运营的企业，我们愿意投入更高的制作成本去做这件事，因为<strong>专业</strong>与<strong>匠心</strong>正是美女写真家最核心的品牌资产。</p>
+        <p>同时，我们也把社区视为内容生态的一部分。创作者上传自己的作品与幕后记录，观众在评论区讨论布光与构图，摄影师之间互相指出问题、给出建议。这种真实、温暖、有建设性的互动，让「美女写真家」不只是一个作品陈列的地方，而是一个正在成长的影像学习共同体。</p>
+        <h3>我们对品质的坚持</h3>
+        <p>平台上所有官方发布的影像均采用高清规格制作，重要专题会提供 4K 版本；涉及模特肖像的内容均签署授权协议，创作者在上传时需完成版权与授权确认。我们相信，<strong>正版</strong>与<strong>值得信赖</strong>是内容平台长期立足的基础。也正因如此，美女写真家在行业内积累了口口相传的口碑，成为许多人像摄影爱好者与创作者的用户首选。</p>
+        <p>未来，品牌将继续在垂直领域深耕：扩展线下共创计划、推出面向新人的系统课程、与更多优秀摄影师共同策划专题企划，并通过比赛、报名、投票等开放形式，让更多人参与到人像写真内容的创作与讨论中来。</p>
+      </div>
+      <aside class="mw-intro-side">
+        <div class="mw-mini">
+          <span class="mw-mini-icon">◈</span>
+          <div><h4>原创内容矩阵</h4><p>教程、幕后、访谈、专题四类内容交叉更新，每周稳定推出新作品。</p></div>
+        </div>
+        <div class="mw-mini">
+          <span class="mw-mini-icon">✧</span>
+          <div><h4>创作者成长体系</h4><p>新人扶持、作品点评、专题共创三级路径，帮助创作者建立个人风格。</p></div>
+        </div>
+        <div class="mw-mini">
+          <span class="mw-mini-icon">☼</span>
+          <div><h4>高清品质标准</h4><p>官方内容统一采用高码率制作，重要企划提供 4K 版本下载与收藏。</p></div>
+        </div>
+        <div class="mw-mini">
+          <span class="mw-mini-icon">♡</span>
+          <div><h4>真实社区氛围</h4><p>以作品说话，以讨论成长，营造包容、多元且温暖的创作环境。</p></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 焦点影像 ================= -->
+<section class="mw-section" id="mwFocus">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">焦点影像</span>
+        <h2>本周重点推荐</h2>
+        <p>编辑团队从近三十支新作品中选出的高完成度内容，涵盖拍摄现场、后期拆解与创作者访谈。</p>
+      </div>
+      <a class="mw-btn mw-btn-ghost" href="#mwStream">查看全部内容流</a>
+    </div>
+    <div class="mw-focus-grid">
+      <article class="mw-vcard">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff0f5'/%3E%3Cstop offset='.5' stop-color='%23f3a6c0'/%3E%3Cstop offset='1' stop-color='%23a4516f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23a)'/%3E%3Cg opacity='.85'%3E%3Cpath d='M520 0 L800 0 L800 450 L360 450 Z' fill='%23fff5f8' opacity='.18'/%3E%3Ccircle cx='600' cy='180' r='96' fill='%23fff5f8' opacity='.35'/%3E%3Ccircle cx='600' cy='180' r='60' fill='%237a3b52' opacity='.35'/%3E%3C/g%3E%3Cg stroke='%23fff5f8' stroke-width='2' opacity='.6' fill='none'%3E%3Cpath d='M60 360 Q200 260 340 360'/%3E%3Cpath d='M60 380 Q200 280 340 380' stroke-dasharray='5 9'/%3E%3C/g%3E%3Crect x='0' y='450' width='800' height='0' fill='%23000'/%3E%3C/svg%3E" alt="焦点影像《窗边的自然光》：如何用一扇窗完成整组写真">
+          <span class="mw-cover-tag">教程干货</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>窗边的自然光：如何用一扇窗完成一整组人物写真</h3>
+          <p>不用补光灯，不租影棚，只用午后四十分钟的窗光。本期镜头跟随摄影师程以宁走进一间老居民楼，从测光、站位到反光板角度，完整拆解柔光人像的建立过程，并对比了顺光、侧光、逆光三种表达的情绪差别。</p>
+          <div class="mw-vtags"><span class="mw-tag">自然光</span><span class="mw-tag">室内写真</span><span class="mw-tag">实战教程</span></div>
+          <div class="mw-vmeta"><b>程以宁</b><span>·</span><span>18:42</span><span>·</span><span>2026-11-16</span><span>·</span><span data-mw-views>3.2 万次播放</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>1284</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆ 收藏</button>
+            <button class="mw-ico" type="button" data-mw-share>↗ 分享</button>
+            <button class="mw-ico" type="button" data-mw-comment>评论</button>
+          </div>
+        </div>
+      </article>
+      <div class="mw-side-list">
+        <article class="mw-vcard">
+          <div class="mw-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23cdbfe6'/%3E%3Cstop offset='1' stop-color='%237a3b52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23b)'/%3E%3Ccircle cx='300' cy='80' r='70' fill='%23fff5f8' opacity='.25'/%3E%3Cpath d='M0 230 L150 150 L260 220 L400 140 L400 300 L0 300Z' fill='%232a1a21' opacity='.5'/%3E%3Ccircle cx='140' cy='130' r='34' fill='%23fdeee7' opacity='.8'/%3E%3C/svg%3E" alt="幕后记录《灯光之前的两个小时》：一组复古人像的诞生">
+            <span class="mw-cover-tag">创作幕后</span>
+            <span class="mw-play"><i>▶</i></span>
+          </div>
+          <div class="mw-vbody">
+            <h3>灯光之前的两个小时：复古人像的诞生</h3>
+            <div class="mw-vmeta"><b>顾也</b><span>·</span><span>12:08</span></div>
+            <div class="mw-vactions">
+              <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>806</span></button>
+              <button class="mw-ico" type="button" data-mw-fav>☆</button>
+              <button class="mw-ico" type="button" data-mw-share>↗</button>
+            </div>
+          </div>
+        </article>
+        <article class="mw-vcard">
+          <div class="mw-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='c' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ffe6ef'/%3E%3Cstop offset='1' stop-color='%23d96f95'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23c)'/%3E%3Cg fill='none' stroke='%23fff5f8' stroke-width='2' opacity='.7'%3E%3Crect x='60' y='70' width='120' height='150' rx='6'/%3E%3Crect x='200' y='40' width='100' height='190' rx='6'/%3E%3C/g%3E%3Cg fill='%237a3b52' opacity='.4'%3E%3Ccircle cx='260' cy='120' r='28'/%3E%3Ccircle cx='120' cy='150' r='22'/%3E%3C/g%3E%3C/svg%3E" alt="深度测评《三支定焦镜头拍人像的真实差距》">
+            <span class="mw-cover-tag">深度测评</span>
+            <span class="mw-play"><i>▶</i></span>
+          </div>
+          <div class="mw-vbody">
+            <h3>三支定焦镜头拍人像的真实差距</h3>
+            <div class="mw-vmeta"><b>林见微</b><span>·</span><span>21:35</span></div>
+            <div class="mw-vactions">
+              <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>642</span></button>
+              <button class="mw-ico" type="button" data-mw-fav>☆</button>
+              <button class="mw-ico" type="button" data-mw-share>↗</button>
+            </div>
+          </div>
+        </article>
+        <article class="mw-vcard">
+          <div class="mw-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='d' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fdeee7'/%3E%3Cstop offset='1' stop-color='%23c98ca2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23d)'/%3E%3Cpath d='M0 300 L0 200 Q100 120 200 210 T400 190 L400 300Z' fill='%237a3b52' opacity='.45'/%3E%3Ccircle cx='90' cy='90' r='46' fill='%23fff5f8' opacity='.7'/%3E%3Cpath d='M250 60 l40 70 h-80z' fill='%237a3b52' opacity='.3'/%3E%3C/svg%3E" alt="人物访谈《光线的语法》：和摄影师谈情绪与距离">
+            <span class="mw-cover-tag">人物访谈</span>
+            <span class="mw-play"><i>▶</i></span>
+          </div>
+          <div class="mw-vbody">
+            <h3>光线的语法：和摄影师谈情绪与距离</h3>
+            <div class="mw-vmeta"><b>苏迟</b><span>·</span><span>26:10</span></div>
+            <div class="mw-vactions">
+              <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>530</span></button>
+              <button class="mw-ico" type="button" data-mw-fav>☆</button>
+              <button class="mw-ico" type="button" data-mw-share>↗</button>
+            </div>
+          </div>
+        </article>
+        <article class="mw-vcard">
+          <div class="mw-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='e' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23a4516f'/%3E%3Cstop offset='1' stop-color='%23f7d7e2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' fill='url(%23e)'/%3E%3Cg stroke='%23fff5f8' stroke-width='1.5' opacity='.6' fill='none'%3E%3Cpath d='M40 260 L200 80 L360 260Z'/%3E%3Cpath d='M110 260 L200 160 L290 260Z'/%3E%3C/g%3E%3Ccircle cx='200' cy='120' r='24' fill='%23fff5f8' opacity='.85'/%3E%3C/svg%3E" alt="城市探索《旧街区的十二个取景点》">
+            <span class="mw-cover-tag">城市探索</span>
+            <span class="mw-play"><i>▶</i></span>
+          </div>
+          <div class="mw-vbody">
+            <h3>旧街区的十二个取景点</h3>
+            <div class="mw-vmeta"><b>沈昼</b><span>·</span><span>15:24</span></div>
+            <div class="mw-vactions">
+              <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>418</span></button>
+              <button class="mw-ico" type="button" data-mw-fav>☆</button>
+              <button class="mw-ico" type="button" data-mw-share>↗</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 内容流 ================= -->
+<section class="mw-section mw-altbg" id="mwStream">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">内容生态</span>
+        <h2>持续更新的精品内容流</h2>
+        <p>按题材筛选，找到你当下最想学习或最想分享的方向。</p>
+      </div>
+      <span style="font-size:13px;color:var(--mw-grey)">当前共 <b style="color:var(--mw-plum)">9</b> 条展示内容</span>
+    </div>
+    <div class="mw-filter-bar" id="mwFilterBar">
+      <button class="mw-chip is-on" type="button" data-mw-filter="all">全部</button>
+      <button class="mw-chip" type="button" data-mw-filter="教程">教程干货</button>
+      <button class="mw-chip" type="button" data-mw-filter="幕后">创作幕后</button>
+      <button class="mw-chip" type="button" data-mw-filter="访谈">人物访谈</button>
+      <button class="mw-chip" type="button" data-mw-filter="美学">艺术美学</button>
+      <button class="mw-chip" type="button" data-mw-filter="城市">城市探索</button>
+    </div>
+    <div class="mw-stream" id="mwStreamGrid">
+
+      <article class="mw-vcard" data-mw-cat="教程">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff0f5'/%3E%3Cstop offset='1' stop-color='%23d96f95'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f1)'/%3E%3Cg fill='none' stroke='%237a3b52' stroke-width='2' opacity='.45'%3E%3Ccircle cx='480' cy='120' r='90'/%3E%3Ccircle cx='480' cy='120' r='130' stroke-dasharray='4 10'/%3E%3C/g%3E%3Cpath d='M0 360 Q160 240 320 330 T640 290 V360Z' fill='%237a3b52' opacity='.4'/%3E%3Cg fill='%23fff5f8' opacity='.85'%3E%3Crect x='50' y='60' width='90' height='3'/%3E%3Crect x='50' y='76' width='56' height='3'/%3E%3C/g%3E%3C/svg%3E" alt="教程封面《逆光人像的三种补光思路》">
+          <span class="mw-cover-tag">教程</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>逆光人像的三种补光思路</h3>
+          <p>从反光板到柔光箱，用同一组逆光场景对比三种补光方案，讲清楚每种方案的适用条件与画面代价。</p>
+          <div class="mw-vmeta"><b>程以宁</b><span>·</span><span>14:20</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>392</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="幕后">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f2' x1='1' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%232a1a21'/%3E%3Cstop offset='1' stop-color='%23c98ca2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f2)'/%3E%3Cg fill='%23ffe6ef' opacity='.8'%3E%3Ccircle cx='200' cy='150' r='58'/%3E%3C/g%3E%3Cg stroke='%23f3a6c0' stroke-width='2' opacity='.65' fill='none'%3E%3Cpath d='M100 300 L200 200 L300 300'/%3E%3Cpath d='M340 300 L420 210 L500 300'/%3E%3C/g%3E%3Crect x='560' y='60' width='3' height='90' fill='%23f3a6c0' opacity='.6'/%3E%3C/svg%3E" alt="幕后封面《一盏灯的改变：棚拍人像布光日志》">
+          <span class="mw-cover-tag">幕后</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>一盏灯的改变：棚拍人像布光日志</h3>
+          <p>记录一次只有一盏主灯的棚拍全过程，从背景变化到人物轮廓，观察光位移动带来的细微差别。</p>
+          <div class="mw-vmeta"><b>顾也</b><span>·</span><span>10:48</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>255</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="访谈">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f3' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23cdbfe6'/%3E%3Cstop offset='1' stop-color='%23fff0f5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f3)'/%3E%3Cg fill='%237a3b52' opacity='.55'%3E%3Ccircle cx='180' cy='180' r='52'/%3E%3Ccircle cx='350' cy='150' r='34'/%3E%3Ccircle cx='480' cy='200' r='66'/%3E%3C/g%3E%3Cg stroke='%23a4516f' stroke-width='2' opacity='.5' fill='none'%3E%3Cpath d='M80 320 Q240 200 560 300'/%3E%3C/g%3E%3C/svg%3E" alt="访谈封面《写真之外：造型师眼中的完整画面》">
+          <span class="mw-cover-tag">访谈</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>写真之外：造型师眼中的完整画面</h3>
+          <p>一场关于服装、妆容与人物气质的长谈，讨论造型如何参与叙事，而不是仅仅作为装饰存在。</p>
+          <div class="mw-vmeta"><b>苏迟</b><span>·</span><span>32:05</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>311</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="美学">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f4' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23a4516f'/%3E%3Cstop offset='1' stop-color='%23fdeee7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f4)'/%3E%3Cg fill='none' stroke='%23fff5f8' stroke-width='2' opacity='.7'%3E%3Cpath d='M80 300 C160 160 280 260 360 150 C440 60 520 200 580 120'/%3E%3C/g%3E%3Cg fill='%23fff5f8' opacity='.85'%3E%3Ccircle cx='180' cy='120' r='8'/%3E%3Ccircle cx='340' cy='210' r='6'/%3E%3Ccircle cx='500' cy='150' r='10'/%3E%3C/g%3E%3C/svg%3E" alt="美学封面《低饱和人像的色泽控制》">
+          <span class="mw-cover-tag">美学</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>低饱和人像的色泽控制</h3>
+          <p>肤色、环境色与高光的关系，一次讲透。附上可直接套用的调色参数与适用场景说明。</p>
+          <div class="mw-vmeta"><b>林见微</b><span>·</span><span>17:33</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>487</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="城市">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f5' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%237a3b52'/%3E%3Cstop offset='1' stop-color='%23f7d7e2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f5)'/%3E%3Cg fill='%232a1a21' opacity='.45'%3E%3Crect x='40' y='180' width='90' height='180'/%3E%3Crect x='150' y='130' width='70' height='230'/%3E%3Crect x='420' y='160' width='100' height='200'/%3E%3Crect x='540' y='200' width='70' height='160'/%3E%3C/g%3E%3Ccircle cx='320' cy='90' r='40' fill='%23fff5f8' opacity='.8'/%3E%3C/svg%3E" alt="城市封面《老城区的颜色笔记》">
+          <span class="mw-cover-tag">城市</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>老城区的颜色笔记</h3>
+          <p>沿街行走的拍摄方法：如何在杂乱的街景里找到干净的背景，用色彩把人物与空间连在一起。</p>
+          <div class="mw-vmeta"><b>沈昼</b><span>·</span><span>13:12</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>203</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="教程">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f6' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f3a6c0'/%3E%3Cstop offset='1' stop-color='%238c4d65'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f6)'/%3E%3Cg fill='none' stroke='%23fff5f8' stroke-width='2' opacity='.65'%3E%3Crect x='90' y='80' width='180' height='200' rx='90'/%3E%3Crect x='330' y='110' width='160' height='170' rx='80'/%3E%3C/g%3E%3Cg fill='%23fff5f8' opacity='.35'%3E%3Crect x='110' y='100' width='140' height='160' rx='70'/%3E%3C/g%3E%3C/svg%3E" alt="教程封面《引导模特摆姿的五个具体提示》">
+          <span class="mw-cover-tag">教程</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>引导模特摆姿的五个具体提示</h3>
+          <p>不再说「自然一点」。用五个可执行的提示语让被摄者放松下来，并给出对应的画面效果示例。</p>
+          <div class="mw-vmeta"><b>程以宁</b><span>·</span><span>11:06</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>356</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="幕后">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f7' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff0f5'/%3E%3Cstop offset='.6' stop-color='%23cdbfe6'/%3E%3Cstop offset='1' stop-color='%237a3b52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f7)'/%3E%3Cg fill='%232a1a21' opacity='.35'%3E%3Ccircle cx='160' cy='230' r='46'/%3E%3Ccircle cx='300' cy='200' r='30'/%3E%3Ccircle cx='470' cy='240' r='60'/%3E%3C/g%3E%3Cg stroke='%23fff5f8' stroke-width='1.6' opacity='.7' fill='none'%3E%3Cpath d='M60 90 H580'/%3E%3Cpath d='M60 110 H420'/%3E%3C/g%3E%3C/svg%3E" alt="幕后封面《胶片数字化的一次尝试》">
+          <span class="mw-cover-tag">幕后</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>胶片数字化的一次尝试</h3>
+          <p>从冲扫到扫描参数，记录一卷彩色负片从暗袋走向屏幕的全过程，以及色彩偏移的真实原因。</p>
+          <div class="mw-vmeta"><b>顾也</b><span>·</span><span>19:52</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>178</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="美学">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f8' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23d96f95'/%3E%3Cstop offset='1' stop-color='%23fdeee7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f8)'/%3E%3Cg fill='%23fff5f8' opacity='.55'%3E%3Cpath d='M0 260 Q120 180 240 260 T480 250 T640 270 V360H0Z'/%3E%3C/g%3E%3Cg stroke='%237a3b52' stroke-width='2' opacity='.5' fill='none'%3E%3Ccircle cx='470' cy='110' r='54'/%3E%3Ccircle cx='470' cy='110' r='76' stroke-dasharray='3 8'/%3E%3C/g%3E%3C/svg%3E" alt="美学封面《安静的力量：极简人像的空间叙事》">
+          <span class="mw-cover-tag">美学</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>安静的力量：极简人像的空间叙事</h3>
+          <p>用留白与单色背景建立画面秩序，讨论人像中「少」为何也能构成丰富的视觉信息。</p>
+          <div class="mw-vmeta"><b>林见微</b><span>·</span><span>15:41</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>264</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mw-vcard" data-mw-cat="访谈">
+        <div class="mw-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f9' x1='1' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%238c4d65'/%3E%3Cstop offset='1' stop-color='%23f7d7e2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f9)'/%3E%3Cg fill='%23fff5f8' opacity='.25'%3E%3Crect x='70' y='70' width='200' height='220'/%3E%3Crect x='300' y='120' width='260' height='170'/%3E%3C/g%3E%3Cg fill='%232a1a21' opacity='.4'%3E%3Ccircle cx='170' cy='150' r='40'/%3E%3Ccircle cx='430' cy='190' r='52'/%3E%3C/g%3E%3C/svg%3E" alt="访谈封面《从助理到主摄：一个摄影师的七年》">
+          <span class="mw-cover-tag">访谈</span>
+          <span class="mw-play"><i>▶</i></span>
+        </div>
+        <div class="mw-vbody">
+          <h3>从助理到主摄：一个摄影师的七年</h3>
+          <p>关于坚持、失败与转折的坦白叙述，也谈到了人像拍摄中「沟通」这件事的重要性。</p>
+          <div class="mw-vmeta"><b>苏迟</b><span>·</span><span>28:14</span></div>
+          <div class="mw-vactions">
+            <button class="mw-ico" type="button" data-mw-like>♡ <span data-mw-like-num>352</span></button>
+            <button class="mw-ico" type="button" data-mw-fav>☆</button>
+            <button class="mw-ico" type="button" data-mw-share>↗</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 专题企划 ================= -->
+<section class="mw-section" id="mwTopics">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">专题企划</span>
+        <h2>有主题的长期创作计划</h2>
+        <p>每个专题由编辑团队发起，联合多位创作者围绕同一命题拍摄，形成可对照、可讨论的作品集合。</p>
+      </div>
+    </div>
+    <div class="mw-topic-grid">
+      <article class="mw-topic">
+        <span class="mw-tno">VOL.96</span>
+        <h3>柔光之下</h3>
+        <p>冬季人像特别企划，围绕室内自然光的柔与静，收录 8 位创作者共 24 幅作品与 12 支幕后影像。</p>
+        <span class="mw-topic-state">更新中 · 已完成 5 / 8 位</span>
+      </article>
+      <article class="mw-topic">
+        <span class="mw-tno">VOL.95</span>
+        <h3>一个人的房间</h3>
+        <p>以室内空间为唯一场景的人像实验，讨论空间尺度、家居物件与人之间的关系如何被镜头重新定义。</p>
+        <span class="mw-topic-state">已完结 · 共 30 件作品</span>
+      </article>
+      <article class="mw-topic">
+        <span class="mw-tno">VOL.94</span>
+        <h3>色卡与肤色</h3>
+        <p>关于色彩与人像的技术性企划，提供六组可复用的调色方案，并附上创作者对肤色处理的判断依据。</p>
+        <span class="mw-topic-state">资料开放下载</span>
+      </article>
+      <article class="mw-topic">
+        <span class="mw-tno">VOL.93</span>
+        <h3>街角的十分钟</h3>
+        <p>限定时间与地点的拍摄挑战：创作者需在十分钟内完成一组人物镜头，强调现场的判断力与即兴能力。</p>
+        <span class="mw-topic-state">报名中 · 截止 11-28</span>
+      </article>
+      <article class="mw-topic">
+        <span class="mw-tno">VOL.92</span>
+        <h3>她们的工作日</h3>
+        <p>人物访谈与影像结合的长线企划，记录不同职业女性的日常状态，以真实感为核心表达诉求。</p>
+        <span class="mw-topic-state">第 4 季筹备中</span>
+      </article>
+      <article class="mw-topic">
+        <span class="mw-tno">VOL.91</span>
+        <h3>胶片留白</h3>
+        <p>复古胶片色调专题，讨论颗粒、宽容度与色彩偏移在人物表达中的情绪作用，含冲扫实测数据。</p>
+        <span class="mw-topic-state">已完结 · 共 18 件作品</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 创作者 ================= -->
+<section class="mw-section mw-altbg" id="mwCreators">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">创作者矩阵</span>
+        <h2>让人像作品说话的创作者们</h2>
+        <p>他们来自不同城市、不同背景，但在同一个命题上持续输出：如何把人的状态真实地留在画面里。</p>
+      </div>
+    </div>
+    <div class="mw-creators">
+      <article class="mw-creator">
+        <div class="mw-avatar" style="background:linear-gradient(135deg,#f3a6c0,#d96f95)">程</div>
+        <h3>程以宁</h3>
+        <p class="mw-crole">自然光人像 / 教程讲师</p>
+        <p>偏爱窗光与午后，主张「先观察环境，再安排人物」。长期更新自然光实战教程。</p>
+        <div class="mw-cnums"><div><b>128</b>作品</div><div><b>4.6万</b>关注</div></div>
+        <button class="mw-ico" type="button" data-mw-creator="程以宁|自然光人像创作者，擅长窗光与室内柔光实战，官方认证讲师。">查看档案</button>
+      </article>
+      <article class="mw-creator">
+        <div class="mw-avatar" style="background:linear-gradient(135deg,#cdbfe6,#7a3b52)">顾</div>
+        <h3>顾也</h3>
+        <p class="mw-crole">棚拍布光 / 幕后记录</p>
+        <p>喜欢用最少的光做出层次，作品里有大量棚拍幕后与器材实测，风格克制而干净。</p>
+        <div class="mw-cnums"><div><b>96</b>作品</div><div><b>3.1万</b>关注</div></div>
+        <button class="mw-ico" type="button" data-mw-creator="顾也|棚拍布光创作者，专注单灯与双灯人像方案，幕后记录风格克制。">查看档案</button>
+      </article>
+      <article class="mw-creator">
+        <div class="mw-avatar" style="background:linear-gradient(135deg,#d96f95,#a4516f)">林</div>
+        <h3>林见微</h3>
+        <p class="mw-crole">色彩调性 / 器材测评</p>
+        <p>对色彩与质感近乎苛刻，擅长低饱和人像与肤色控制，测评内容数据详实。</p>
+        <div class="mw-cnums"><div><b>152</b>作品</div><div><b>5.8万</b>关注</div></div>
+        <button class="mw-ico" type="button" data-mw-creator="林见微|色彩与调性创作者，低饱和人像与肤色处理的长期实践者。">查看档案</button>
+      </article>
+      <article class="mw-creator">
+        <div class="mw-avatar" style="background:linear-gradient(135deg,#a4516f,#f7d7e2)">苏</div>
+        <h3>苏迟</h3>
+        <p class="mw-crole">人物访谈 / 品牌故事</p>
+        <p>以访谈见长，善于把技术问题转化为可理解的经验，镜头前与镜头后同样从容。</p>
+        <div class="mw-cnums"><div><b>74</b>作品</div><div><b>2.4万</b>关注</div></div>
+        <button class="mw-ico" type="button" data-mw-creator="苏迟|人物访谈创作者，长期记录摄影师与造型师的创作方法与心路。">查看档案</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 作品墙 ================= -->
+<section class="mw-section" id="mwWall">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">影像墙</span>
+        <h2>社区精选作品</h2>
+        <p>来自创作者投稿的高完成度画面，每一张都附有拍摄思路与参数备注。</p>
+      </div>
+      <a class="mw-btn mw-btn-ghost" href="#mwContact">上传我的作品</a>
+    </div>
+    <div class="mw-wall">
+      <figure class="mw-w-lg">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fdeee7'/%3E%3Cstop offset='1' stop-color='%23d96f95'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='400' fill='url(%23w1)'/%3E%3Ccircle cx='420' cy='130' r='110' fill='%23fff5f8' opacity='.45'/%3E%3Cpath d='M0 400 Q180 260 360 350 T600 320 V400Z' fill='%237a3b52' opacity='.45'/%3E%3Cg fill='%237a3b52' opacity='.3'%3E%3Ccircle cx='170' cy='180' r='56'/%3E%3C/g%3E%3C/svg%3E" alt="作品墙大图《窗前的静谧》：自然光单人半身像">
+        <figcaption>《窗前的静谧》· 程以宁</figcaption>
+      </figure>
+      <figure class="mw-w-md">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%237a3b52'/%3E%3Cstop offset='1' stop-color='%23cdbfe6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='250' fill='url(%23w2)'/%3E%3Cg fill='%23fff5f8' opacity='.4'%3E%3Crect x='60' y='60' width='120' height='150' rx='60'/%3E%3C/g%3E%3Ccircle cx='300' cy='110' r='42' fill='%23fdeee7' opacity='.7'/%3E%3C/svg%3E" alt="作品墙中图《午后三点的轮廓光》">
+        <figcaption>《午后三点的轮廓光》· 顾也</figcaption>
+      </figure>
+      <figure class="mw-w-sm">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f3a6c0'/%3E%3Cstop offset='1' stop-color='%23a4516f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='300' fill='url(%23w3)'/%3E%3Ccircle cx='150' cy='120' r='58' fill='%23fff5f8' opacity='.5'/%3E%3Cpath d='M60 300 Q150 200 240 300Z' fill='%232a1a21' opacity='.4'/%3E%3C/svg%3E" alt="作品墙小图《白色衬衫与灰墙》">
+        <figcaption>《白色衬衫与灰墙》· 林见微</figcaption>
+      </figure>
+      <figure class="mw-w-sm">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fff0f5'/%3E%3Cstop offset='1' stop-color='%238c4d65'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='300' fill='url(%23w4)'/%3E%3Cg stroke='%237a3b52' stroke-width='2' opacity='.45' fill='none'%3E%3Cpath d='M50 240 L150 90 L250 240Z'/%3E%3C/g%3E%3Ccircle cx='150' cy='150' r='34' fill='%237a3b52' opacity='.35'/%3E%3C/svg%3E" alt="作品墙小图《逆光里的侧影》">
+        <figcaption>《逆光里的侧影》· 沈昼</figcaption>
+      </figure>
+      <figure class="mw-w-md">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='w5' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232a1a21'/%3E%3Cstop offset='1' stop-color='%23c98ca2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='250' fill='url(%23w5)'/%3E%3Cg fill='%23ffe6ef' opacity='.55'%3E%3Ccircle cx='120' cy='110' r='46'/%3E%3Ccircle cx='300' cy='150' r='30'/%3E%3C/g%3E%3Cg stroke='%23f3a6c0' stroke-width='1.5' opacity='.6' fill='none'%3E%3Cpath d='M0 200 Q200 130 400 210'/%3E%3C/g%3E%3C/svg%3E" alt="作品墙中图《夜灯下的低语》">
+        <figcaption>《夜灯下的低语》· 苏迟</figcaption>
+      </figure>
+      <figure class="mw-w-sm">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='w6' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23cdbfe6'/%3E%3Cstop offset='1' stop-color='%23fdeee7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='300' fill='url(%23w6)'/%3E%3Cg fill='%23a4516f' opacity='.4'%3E%3Crect x='80' y='100' width='60' height='140'/%3E%3Crect x='170' y='70' width='50' height='170'/%3E%3C/g%3E%3C/svg%3E" alt="作品墙小图《衣架与光斑》">
+        <figcaption>《衣架与光斑》· 顾也</figcaption>
+      </figure>
+      <figure class="mw-w-sm">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Cdefs%3E%3ClinearGradient id='w7' x1='1' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23d96f95'/%3E%3Cstop offset='1' stop-color='%23fff0f5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='300' fill='url(%23w7)'/%3E%3Ccircle cx='150' cy='140' r='70' fill='none' stroke='%237a3b52' stroke-width='2' opacity='.4'/%3E%3Ccircle cx='150' cy='140' r='34' fill='%237a3b52' opacity='.3'/%3E%3C/svg%3E" alt="作品墙小图《环形光测试》">
+        <figcaption>《环形光测试》· 林见微</figcaption>
+      </figure>
+      <figure class="mw-w-md">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='w8' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f7d7e2'/%3E%3Cstop offset='1' stop-color='%237a3b52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='250' fill='url(%23w8)'/%3E%3Cg fill='%23fff5f8' opacity='.4'%3E%3Cpath d='M0 200 Q100 120 200 200 T400 180 V250 H0Z'/%3E%3C/g%3E%3Cg fill='%232a1a21' opacity='.35'%3E%3Ccircle cx='290' cy='90' r='30'/%3E%3C/g%3E%3C/svg%3E" alt="作品墙中图《白色长裙与风》">
+        <figcaption>《白色长裙与风》· 沈昼</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 品牌故事 ================= -->
+<section class="mw-section mw-altbg" id="mwStory">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">品牌故事</span>
+        <h2>从一个摄影论坛到人像影像品牌</h2>
+        <p>品牌的成长路径，也是人像写真这一垂直领域内容生态逐渐成型的过程。</p>
+      </div>
+    </div>
+    <div class="mw-story-grid">
+      <div>
+        <div class="mw-prose">
+          <p>美女写真家的起点其实很小：几位常在同一座城市拍摄的摄影师，习惯在周末交换场地、互相补光、一起研究失败的照片。2019 年，他们把这种交流搬到了线上，用视频记录每次拍摄的过程，没想到收到大量来自新手的提问——「反光板该放在哪个角度」「模特紧张时该说什么」「肤色偏黄怎么处理」。这些问题成为品牌最早的内容目录。</p>
+          <p>此后，团队逐渐形成稳定的制作节奏：每月一次专题企划、每周两支实战内容、每季度一档人物访谈。作为企业，我们建立了完整的授权与审核流程，确保每一支影像都经过被摄者同意；作为社区，我们坚持把评论区留给真实讨论，让不同的拍摄方法都能被看见。</p>
+          <p>多年的<strong>深耕</strong>带来的是口碑的沉淀。今天，美女写真家已与多家影像器材品牌、摄影培训机构建立合作，共同推动人像摄影知识的普及。我们始终认为，人像技术的传播不应是封闭的，<strong>包容</strong>与<strong>多元</strong>的表达，才能让这个领域持续生长。</p>
+        </div>
+        <div class="mw-story-list">
+          <div class="mw-story-item">
+            <span class="mw-sn">01</span>
+            <div><h4>真实优先</h4><p>不刻意制造完美，保留拍摄现场的判断、犹豫与修正，让内容具备可复用的经验价值。</p></div>
+          </div>
+          <div class="mw-story-item">
+            <span class="mw-sn">02</span>
+            <div><h4>专业为底</h4><p>技术参数、布光图示、调色思路全部公开，让每一个结论都有可验证的依据。</p></div>
+          </div>
+          <div class="mw-story-item">
+            <span class="mw-sn">03</span>
+            <div><h4>社区共建</h4><p>投稿、报名、投票、点评，创作者与观众共同参与内容的筛选与迭代。</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <figure class="mw-story-media">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='s1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff0f5'/%3E%3Cstop offset='.6' stop-color='%23f3a6c0'/%3E%3Cstop offset='1' stop-color='%237a3b52'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23s1)'/%3E%3Cg fill='none' stroke='%23fff5f8' stroke-width='2' opacity='.55'%3E%3Crect x='120' y='140' width='250' height='320' rx='10'/%3E%3Crect x='420' y='90' width='260' height='380' rx='10'/%3E%3C/g%3E%3Cg fill='%232a1a21' opacity='.28'%3E%3Ccircle cx='245' cy='250' r='58'/%3E%3Ccircle cx='550' cy='270' r='72'/%3E%3Cpath d='M0 520 Q200 440 400 510 T800 480 V600 H0Z'/%3E%3C/g%3E%3Cg fill='%23fff5f8' opacity='.8'%3E%3Ctext x='120' y='540' font-size='22' font-family='sans-serif' letter-spacing='4'%3EPORTRAIT BRAND SINCE 2019%3C/text%3E%3C/g%3E%3C/svg%3E" alt="美女写真家品牌故事配图：摄影棚内的两幅人像作品并置展示">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 用户评价 ================= -->
+<section class="mw-section" id="mwReviews">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">社区口碑</span>
+        <h2>他们这样评价美女写真家</h2>
+        <p>来自创作者与观众的真实反馈，来自不同经验阶段、不同关注点。</p>
+      </div>
+    </div>
+    <div class="mw-reviews">
+      <article class="mw-review">
+        <div class="mw-review-head">
+          <span class="mw-r-avatar" style="background:#d96f95">阿</span>
+          <div><b>阿柚</b><small>人像爱好者 · 关注 8 个月</small></div>
+        </div>
+        <div class="mw-stars">★★★★★</div>
+        <p>窗光那期我反复看了三遍，跟着调整反光板位置，第一次拍出了自己满意的侧脸光。讲解不绕弯子，参数和现场一一对应，对新手非常友好。</p>
+      </article>
+      <article class="mw-review">
+        <div class="mw-review-head">
+          <span class="mw-r-avatar" style="background:#7a3b52">陆</span>
+          <div><b>陆一澄</b><small>独立摄影师 · 关注 2 年</small></div>
+        </div>
+        <div class="mw-stars">★★★★★</div>
+        <p>作为从业者，我欣赏这里对布光逻辑的讲法——不是给你一个万能公式，而是告诉你为什么这样放。专题企划的命题质量也稳定，很少有敷衍的内容。</p>
+      </article>
+      <article class="mw-review">
+        <div class="mw-review-head">
+          <span class="mw-r-avatar" style="background:#a4516f">桑</span>
+          <div><b>桑桑</b><small>妆造师 · 关注 5 个月</small></div>
+        </div>
+        <div class="mw-stars">★★★★☆</div>
+        <p>造型师访谈那一期很打动我，终于有人认真讨论妆造在整体画面里的作用。希望以后能多做几期不同工种的幕后，让大家看到一组写真是怎么合作出来的。</p>
+      </article>
+      <article class="mw-review">
+        <div class="mw-review-head">
+          <span class="mw-r-avatar" style="background:#cdbfe6">周</span>
+          <div><b>周末不加班</b><small>普通观众 · 关注 3 个月</small></div>
+        </div>
+        <div class="mw-stars">★★★★★</div>
+        <p>我不拍照，纯粹是喜欢看人像的过程。视频里模特的情绪变化很有意思，感觉摄影师和模特之间的沟通也是一种创作。画质确实好，看起来很舒服。</p>
+      </article>
+      <article class="mw-review">
+        <div class="mw-review-head">
+          <span class="mw-r-avatar" style="background:#f3a6c0">林</span>
+          <div><b>林子里</b><small>高校摄影社 · 关注 1 年</small></div>
+        </div>
+        <div class="mw-stars">★★★★★</div>
+        <p>我们社团把这里的教程当作内部分享材料，结构清晰、有图示、有对比。上次创作挑战赛投了三组作品，虽然没进精选，但收到了具体点评，受益很多。</p>
+      </article>
+      <article class="mw-review">
+        <div class="mw-review-head">
+          <span class="mw-r-avatar" style="background:#8c4d65">老</span>
+          <div><b>老潘的相机</b><small>器材爱好者 · 关注 6 个月</small></div>
+        </div>
+        <div class="mw-stars">★★★★☆</div>
+        <p>器材测评部分比较克制，没有夸张的结论，给出的样张场景也够多，能自己判断。晚期的测评节奏稍慢，但信息密度依然在线，值得等。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 企业动态 ================= -->
+<section class="mw-section mw-altbg" id="mwNews">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">企业动态</span>
+        <h2>官方发布与更新日志</h2>
+        <p>专题上线、赛事报名、功能更新与运营公告，统一在这里发布。</p>
+      </div>
+    </div>
+    <div class="mw-news">
+      <article class="mw-news-card">
+        <time datetime="2026-11-18">2026-11-18</time>
+        <h3>冬季专题《柔光之下》正式上线</h3>
+        <p>收录 8 位创作者共 24 幅作品与 12 支幕后影像，首周开放专题合辑下载。</p>
+      </article>
+      <article class="mw-news-card">
+        <time datetime="2026-11-16">2026-11-16</time>
+        <h3>第十二期写真创作挑战赛开放报名</h3>
+        <p>本期主题「窗边的自然光」，投稿截止 11 月 28 日，优秀作品将进入专题企划。</p>
+      </article>
+      <article class="mw-news-card">
+        <time datetime="2026-11-14">2026-11-14</time>
+        <h3>4K 高清调色预设合辑发布</h3>
+        <p>共 6 组低饱和人像预设，附使用说明与适用场景，品牌会员可免费下载。</p>
+      </article>
+      <article class="mw-news-card">
+        <time datetime="2026-11-10">2026-11-10</time>
+        <h3>创作者扶持计划第三期招募</h3>
+        <p>面向加入平台未满一年的创作者，提供专题共创机会与官方点评支持。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 合作 ================= -->
+<section class="mw-section" id="mwPartners">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">合作伙伴</span>
+        <h2>与我们一起推动人像内容生长</h2>
+        <p>器材、教育与场地方伙伴共同参与内容制作与线下共创。</p>
+      </div>
+    </div>
+    <div class="mw-partners">
+      <span class="mw-partner">影像器材合作品牌</span>
+      <span class="mw-partner">城市摄影培训机构</span>
+      <span class="mw-partner">独立影棚空间</span>
+      <span class="mw-partner">冲洗与输出工作室</span>
+      <span class="mw-partner">青年影像基金会</span>
+      <span class="mw-partner">本地文化空间</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="mw-section mw-altbg" id="mwFaq">
+  <div class="mw-wrap">
+    <div class="mw-section-head">
+      <div>
+        <span class="mw-kicker">帮助中心</span>
+        <h2>常见问题</h2>
+        <p>关于投稿、授权、内容合作与账号使用的高频疑问。</p>
+      </div>
+    </div>
+    <div class="mw-faq">
+      <details>
+        <summary>如何向美女写真家投稿自己的作品？</summary>
+        <p>点击页面右上角「我要投稿」，填写作品标题、拍摄思路与联系方式，并上传作品预览图。编辑团队会在 5 个工作日内给予反馈，通过审核的内容将进入官方内容池，并有机会参与专题企划。</p>
+      </details>
+      <details>
+        <summary>投稿作品需要满足哪些基本要求？</summary>
+        <p>作品需为本人原创或已获得完整授权，涉及人物肖像的须提供被摄者同意证明。官方建议提供高清原始素材，并附上拍摄参数与后期思路，便于内容呈现与读者学习。</p>
+      </details>
+      <details>
+        <summary>平台上的影像可以下载或二次使用吗？</summary>
+        <p>官方发布的部分专题合辑与预设资源对品牌会员开放下载，仅限个人学习使用。任何形式的商业使用需提前联系商务合作邮箱获取书面授权，未经许可的转载与二次分发均不被允许。</p>
+      </details>
+      <details>
+        <summary>创作挑战赛的评选方式是怎样的？</summary>
+        <p>每期挑战赛由编辑团队初选出候选作品，再结合社区投票与专业评审意见确定最终名单。评审维度包括光线处理、构图完整度、情绪表达与原创性，结果会在企业动态中公示。</p>
+      </details>
+      <details>
+        <summary>我是品牌方，如何与美女写真家合作？</summary>
+        <p>可通过页面底部联系邮箱与我们沟通，说明合作形式、产品类型与预期目标。目前开放的合作包括内容共创、专题冠名、线下工作坊与创作者联合企划，我们会根据内容契合度给出方案。</p>
+      </details>
+      <details>
+        <summary>账号收藏与关注的数据会同步吗？</summary>
+        <p>收藏、点赞与关注记录会保存在当前账号下，在同一浏览器再次访问时可继续查看。建议保持账号登录状态，以获得完整的社区互动体验。</p>
+      </details>
+      <details>
+        <summary>是否提供系统的学习路径？</summary>
+        <p>平台按照光线、造型、镜头语言、后期输出四条线索整理了学习路径，新手可从「自然光实战」系列入门，再进入专题企划对照学习。部分系统课程由官方与创作者联合开发，将在后续版本上线。</p>
+      </details>
+      <details>
+        <summary>内容更新频率是怎样的？</summary>
+        <p>常规内容每周更新两支，专题企划保持每月一期的节奏，人物访谈按季度推出。具体更新时间会提前在顶部公告条与企业动态中发布。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 联系 ================= -->
+<section class="mw-section" id="mwContact">
+  <div class="mw-wrap">
+    <div class="mw-contact">
+      <div>
+        <h2>把你的作品带到这里</h2>
+        <p>无论是刚拿起相机的第一天，还是已经拍了很多年，只要你对人像写真有真实的想法，欢迎与我们联系。投稿、合作、建议，我们都会认真阅读。</p>
+        <div class="mw-contact-info" style="margin-top:18px">
+          <div>✉ 投稿与合作：studio@meinvxiezhenjia.example</div>
+          <div>☎ 商务联络：400-000-0000（工作日 10:00–18:00）</div>
+          <div>◈ 办公地址：城市影像创意园 B 座 3 层</div>
+        </div>
+      </div>
+      <div class="mw-contact-actions">
+        <button class="mw-btn mw-btn-ghost" type="button" data-mw-open="submit">我要投稿 / 报名</button>
+        <button class="mw-btn mw-btn-ghost" type="button" data-mw-open="share">分享给朋友</button>
+        <button class="mw-btn mw-btn-ghost" type="button" data-mw-open="feedback">意见与反馈</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="mw-footer">
+  <div class="mw-wrap">
+    <div class="mw-footer-grid">
+      <div>
+        <div class="mw-footer-brand">
+          <span class="mw-logo-mark">写</span>
+          <b>美女写真家</b>
+        </div>
+        <p>美女写真家官方网站，专注人像写真的原创视频品牌与创作者社区。持续运营专业、真实、高品质的影像内容，与创作者共同成长。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#mwFocus">焦点影像</a></li>
+          <li><a href="#mwStream">内容流</a></li>
+          <li><a href="#mwTopics">专题企划</a></li>
+          <li><a href="#mwWall">影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#mwCreators">创作者矩阵</a></li>
+          <li><a href="#mwReviews">用户评价</a></li>
+          <li><a href="#mwNews">企业动态</a></li>
+          <li><a href="#mwContact">投稿入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#mwStory">品牌故事</a></li>
+          <li><a href="#mwAbout">品牌解析</a></li>
+          <li><a href="#mwFaq">帮助中心</a></li>
+          <li><a href="#mwPartners">合作伙伴</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mw-footer-bottom">
+      <span>© 2026 美女写真家 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案号 000000000 · 内容均经授权发布</span>
+    </div>
+  </div>
+</footer>
+
+<button class="mw-top" id="mwTop" type="button" aria-label="回到顶部">↑</button>
+<div class="mw-toast" id="mwToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="mw-modal" id="mwModalSubmit" aria-hidden="true">
+  <div class="mw-modal-box" role="dialog" aria-modal="true" aria-label="投稿与报名">
+    <button class="mw-modal-close" type="button" data-mw-close aria-label="关闭">×</button>
+    <h3>投稿 / 报名</h3>
+    <p>填写基本信息，编辑团队会在 5 个工作日内通过邮件与你联系。请确保作品为原创或已获得授权。</p>
+    <label for="mwSubmitName">你的昵称</label>
+    <input id="mwSubmitName" type="text" placeholder="例如：程以宁">
+    <label for="mwSubmitContact">联系方式</label>
+    <input id="mwSubmitContact" type="text" placeholder="邮箱或手机号">
+    <label for="mwSubmitNote">作品简介</label>
+    <textarea id="mwSubmitNote" rows="3" placeholder="简单描述你的作品主题与拍摄思路"></textarea>
+    <button class="mw-btn mw-btn-primary" type="button" id="mwSubmitSend" style="width:100%;justify-content:center">提交信息</button>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="mw-modal" id="mwModalShare" aria-hidden="true">
+  <div class="mw-modal-box" role="dialog" aria-modal="true" aria-label="分享本页">
+    <button class="mw-modal-close" type="button" data-mw-close aria-label="关闭">×</button>
+    <h3>分享美女写真家</h3>
+    <p>把这页内容分享给同样喜欢人像写真的朋友。</p>
+    <div class="mw-share-row">
+      <button type="button" data-mw-share-item="微信">微信</button>
+      <button type="button" data-mw-share-item="微博">微博</button>
+      <button type="button" data-mw-share-item="QQ">QQ</button>
+      <button type="button" id="mwCopyLink">复制链接</button>
+    </div>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="mw-modal" id="mwModalFeedback" aria-hidden="true">
+  <div class="mw-modal-box" role="dialog" aria-modal="true" aria-label="意见反馈">
+    <button class="mw-modal-close" type="button" data-mw-close aria-label="关闭">×</button>
+    <h3>意见与反馈</h3>
+    <p>内容问题、功能建议或合作咨询，都可以写在这里。</p>
+    <label for="mwFbText">反馈内容</label>
+    <textarea id="mwFbText" rows="4" placeholder="请描述你遇到的问题或建议"></textarea>
+    <button class="mw-btn mw-btn-dark" type="button" id="mwFbSend" style="width:100%;justify-content:center">发送反馈</button>
+  </div>
+</div>
+
+<!-- 创作者档案弹窗 -->
+<div class="mw-modal" id="mwModalCreator" aria-hidden="true">
+  <div class="mw-modal-box" role="dialog" aria-modal="true" aria-label="创作者档案">
+    <button class="mw-modal-close" type="button" data-mw-close aria-label="关闭">×</button>
+    <h3 id="mwCreatorTitle">创作者档案</h3>
+    <p id="mwCreatorDesc"></p>
+    <button class="mw-btn mw-btn-primary" type="button" data-mw-close style="width:100%;justify-content:center">关注这位创作者</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById('mwToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('mwBurger');
+  var panel = document.getElementById('mwMobilePanel');
+  if(burger && panel){
+    burger.addEventListener('click', function(){
+      var open = panel.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '✕' : '☰';
+    });
+    panel.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        panel.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+        burger.textContent = '☰';
+      });
+    });
+  }
+
+  /* ---------- 搜索建议 ---------- */
+  var searchInput = document.getElementById('mwSearchInput');
+  var searchHint = document.getElementById('mwSearchHint');
+  var searchBtn = document.getElementById('mwSearchBtn');
+  var searchData = [
+    '窗边的自然光 教程',
+    '逆光人像 补光思路',
+    '棚拍布光 幕后记录',
+    '低饱和人像 调色',
+    '创作者：程以宁',
+    '创作者：林见微',
+    '专题：柔光之下',
+    '挑战赛 报名'
+  ];
+
+  function renderHint(kw){
+    if(!searchHint) return;
+    var q = (kw || '').trim();
+    if(!q){
+      searchHint.innerHTML = '<p>试试：自然光 / 布光 / 调色 / 创作者</p>' +
+        searchData.slice(0,3).map(function(s){ return '<button type="button" data-mw-go="'+s+'">'+s+'</button>'; }).join('');
+    } else {
+      var hit = searchData.filter(function(s){ return s.indexOf(q) > -1; });
+      if(hit.length){
+        searchHint.innerHTML = hit.map(function(s){ return '<button type="button" data-mw-go="'+s+'">'+s+'</button>'; }).join('');
+      } else {
+        searchHint.innerHTML = '<div class="mw-hint-empty">暂无直接匹配，可先浏览焦点影像或联系编辑部推荐。</div>';
+      }
+    }
+    searchHint.classList.add('is-open');
+    searchHint.querySelectorAll('[data-mw-go]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        searchInput.value = btn.getAttribute('data-mw-go');
+        searchHint.classList.remove('is-open');
+        showToast('已为你定位到相关内容：' + btn.getAttribute('data-mw-go'));
+      });
+    });
+  }
+
+  if(searchInput){
+    searchInput.addEventListener('focus', function(){ renderHint(searchInput.value); });
+    searchInput.addEventListener('input', function(){ renderHint(searchInput.value); });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        doSearch();
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(searchHint && !searchHint.contains(e.target) && e.target !== searchInput){
+        searchHint.classList.remove('is-open');
+      }
+    });
+  }
+  function doSearch(){
+    var q = searchInput ? searchInput.value.trim() : '';
+    if(!q){ showToast('请输入关键词，例如「自然光」'); return; }
+    var hit = searchData.filter(function(s){ return s.indexOf(q) > -1; });
+    if(hit.length){
+      showToast('找到 ' + hit.length + ' 条相关内容，已为你展开筛选');
+      var target = document.getElementById('mwStream');
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    } else {
+      showToast('暂未找到「' + q + '」，可浏览焦点影像');
+    }
+    if(searchHint) searchHint.classList.remove('is-open');
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-mw-count]');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function runCount(el){
+    var target = parseInt(el.getAttribute('data-mw-count'), 10) || 0;
+    if(reduced){ el.textContent = target; return; }
+    var start = performance.now(), dur = 1400;
+    function step(now){
+      var p = Math.min((now - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased);
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window && counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          runCount(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.4});
+    counters.forEach(function(c){ io.observe(c); });
+  } else {
+    counters.forEach(function(c){ c.textContent = c.getAttribute('data-mw-count'); });
+  }
+
+  /* ---------- 点赞 / 收藏 / 评论 / 分享 ---------- */
+  document.querySelectorAll('[data-mw-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      var numEl = btn.querySelector('[data-mw-like-num]');
+      if(numEl){
+        var n = parseInt(numEl.textContent.replace(/[^\d]/g,''),10) || 0;
+        numEl.textContent = on ? n + 1 : Math.max(0, n - 1);
+      }
+      btn.firstChild && (btn.childNodes[0].nodeValue = on ? '♥ ' : '♡ ');
+      showToast(on ? '已点赞，感谢你的喜欢' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('[data-mw-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      showToast(on ? '已加入收藏，稍后可在账号中查看' : '已取消收藏');
+    });
+  });
+
+  document.querySelectorAll('[data-mw-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('mwModalShare');
+    });
+  });
+
+  document.querySelectorAll('[data-mw-comment]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast('评论区已开放，欢迎分享你的拍摄心得');
+      var target = document.getElementById('mwReviews');
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  /* ---------- 弹窗控制 ---------- */
+  var modals = {
+    submit: document.getElementById('mwModalSubmit'),
+    share: document.getElementById('mwModalShare'),
+    feedback: document.getElementById('mwModalFeedback'),
+    creator: document.getElementById('mwModalCreator')
+  };
+  function openModal(id){
+    Object.keys(modals).forEach(function(k){
+      var m = modals[k];
+      if(m){ m.classList.remove('is-open'); m.setAttribute('aria-hidden','true'); }
+    });
+    var target = document.getElementById(id);
+    if(target){ target.classList.add('is-open'); target.setAttribute('aria-hidden','false'); }
+  }
+  function closeModals(){
+    Object.keys(modals).forEach(function(k){
+      var m = modals[k];
+      if(m){ m.classList.remove('is-open'); m.setAttribute('aria-hidden','true'); }
+    });
+  }
+  document.querySelectorAll('[data-mw-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var key = btn.getAttribute('data-mw-open');
+      if(modals[key]) openModal('mwModal' + key.charAt(0).toUpperCase() + key.slice(1));
+    });
+  });
+  document.querySelectorAll('[data-mw-close]').forEach(function(btn){
+    btn.addEventListener('click', closeModals);
+  });
+  Object.keys(modals).forEach(function(k){
+    var m = modals[k];
+    if(!m) return;
+    m.addEventListener('click', function(e){ if(e.target === m) closeModals(); });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModals(); });
+
+  /* ---------- 创作者档案 ---------- */
+  document.querySelectorAll('[data-mw-creator]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var parts = (btn.getAttribute('data-mw-creator') || '').split('|');
+      var titleEl = document.getElementById('mwCreatorTitle');
+      var descEl = document.getElementById('mwCreatorDesc');
+      if(titleEl) titleEl.textContent = parts[0] || '创作者档案';
+      if(descEl) descEl.textContent = parts[1] || '';
+      openModal('mwModalCreator');
+    });
+  });
+
+  /* ---------- 提交 / 反馈 ---------- */
+  var submitSend = document.getElementById('mwSubmitSend');
+  if(submitSend){
+    submitSend.addEventListener('click', function(){
+      var name = (document.getElementById('mwSubmitName') || {}).value || '';
+      var contact = (document.getElementById('mwSubmitContact') || {}).value || '';
+      if(!name.trim() || !contact.trim()){
+        showToast('请填写昵称与联系方式');
+        return;
+      }
+      closeModals();
+      showToast('已收到投稿信息，编辑团队会在 5 个工作日内联系你');
+    });
+  }
+  var fbSend = document.getElementById('mwFbSend');
+  if(fbSend){
+    fbSend.addEventListener('click', function(){
+      var text = (document.getElementById('mwFbText') || {}).value || '';
+      if(!text.trim()){
+        showToast('请先写下你的反馈内容');
+        return;
+      }
+      closeModals();
+      showToast('反馈已提交，感谢你的建议');
+    });
+  }
+
+  /* ---------- 分享与复制 ---------- */
+  document.querySelectorAll('[data-mw-share-item]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-mw-share-item');
+      showToast('已唤起' + name + '分享，或复制链接发送给朋友');
+      closeModals();
+    });
+  });
+  var copyBtn = document.getElementById('mwCopyLink');
+  if(copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var url = window.location.origin + window.location.pathname;
+      function done(){ showToast('链接已复制到剪贴板'); closeModals(); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(done).catch(function(){ fallbackCopy(url, done); });
+      } else {
+        fallbackCopy(url, done);
+      }
+    });
+  }
+  function fallbackCopy(text, cb){
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly','');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      cb();
+    }catch(e){
+      showToast('复制失败，可手动选择地址栏链接');
+    }
+  }
+
+  /* ---------- 内容流筛选 ---------- */
+  var filterBar = document.getElementById('mwFilterBar');
+  if(filterBar){
+    filterBar.addEventListener('click', function(e){
+      var chip = e.target.closest('[data-mw-filter]');
+      if(!chip) return;
+      var key = chip.getAttribute('data-mw-filter');
+      filterBar.querySelectorAll('.mw-chip').forEach(function(c){ c.classList.remove('is-on'); });
+      chip.classList.add('is-on');
+      var cards = document.querySelectorAll('#mwStreamGrid .mw-vcard');
+      var shown = 0;
+      cards.forEach(function(card){
+        var cat = card.getAttribute('data-mw-cat');
+        var ok = key === 'all' || cat === key;
+        card.style.display = ok ? '' : 'none';
+        if(ok) shown++;
+      });
+      showToast(key === 'all' ? '已展示全部 ' + shown + ' 条内容' : '已筛选「' + chip.textContent.trim() + '」共 ' + shown + ' 条');
+    });
+  }
+
+  /* ---------- 导航高亮 & 回顶 ---------- */
+  var navLinks = document.querySelectorAll('.mw-nav a');
+  var sections = [];
+  navLinks.forEach(function(a){
+    var id = a.getAttribute('href');
+    if(id && id.charAt(0) === '#'){
+      var sec = document.querySelector(id);
+      if(sec) sections.push({link:a, el:sec});
+    }
+  });
+  var topBtn = document.getElementById('mwTop');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    if(topBtn){
+      if(y > 640) topBtn.classList.add('is-show');
+      else topBtn.classList.remove('is-show');
+    }
+    var cur = null;
+    sections.forEach(function(s){
+      if(s.el.offsetTop - 160 <= y) cur = s.link;
+    });
+    navLinks.forEach(function(a){ a.classList.remove('is-active'); });
+    if(cur) cur.classList.add('is-active');
+  }, {passive:true});
+
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+})();
+</script>
+</body>
+        </html>
